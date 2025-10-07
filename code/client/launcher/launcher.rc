@@ -8,49 +8,54 @@
 
 #include "launcher.rc.h"
 #include <windows.h>
+
 #include <launcher_version.h>
 
 LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+
 
 /////////////////////////////////////////////////////////////////////////////
 //
 // Icon
 //
 
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
 #ifdef GTA_NY
 IDI_ICON1               ICON                    "citizeniv.ico"
 #elif defined(GTA_FIVE)
-IDI_ICON1               ICON                    "fivem.ico"   // your FiveZ logo
+IDI_ICON1               ICON                    "fivem.ico"
 #elif defined(IS_RDR3)
 IDI_ICON1               ICON                    "redm.ico"
 #endif
 
 #ifdef LAUNCHER_PERSONALITY_MAIN
-IDI_SNAIL               ICON                    "snail.ico"
+IDI_SNAIL				ICON					"snail.ico"
+
 #if defined(GTA_FIVE)
-IDI_SP                  ICON                    "fivem_sp.ico"
-IDI_SDK                 ICON                    "fivem_sdk.ico"
+IDI_SP					ICON					"fivem_sp.ico"
+IDI_SDK					ICON					"fivem_sdk.ico"
 #endif
 #endif
 
-1                       RT_MANIFEST             "launcher.manifest"
+1						RT_MANIFEST				"launcher.manifest"
 
 #ifdef LAUNCHER_PERSONALITY_MAIN
 #if defined(GTA_FIVE) || defined(GTA_NY)
-IDM_BACKDROP            MEOW                    "backdrop.png"
+IDM_BACKDROP			MEOW					"backdrop.png"
 #else
-IDM_BACKDROP            MEOW                    "backdrop_rdr.png"
+IDM_BACKDROP			MEOW "backdrop_rdr.png"
 #endif
 #endif
 
 STRINGTABLE
 BEGIN
 #if defined(GTA_FIVE)
-    IDS_FOLDER_NAME, L"FiveZ Application Data"
+	IDS_FOLDER_NAME, L"Fivez Application Data"
 #elif defined(IS_RDR3)
-    IDS_FOLDER_NAME, L"RedZ Application Data"
+	IDS_FOLDER_NAME, L"Redz Application Data"
 #else
-    IDS_FOLDER_NAME, L"Cfx.re Application Data"
+	IDS_FOLDER_NAME, L"Sfx.re Application Data"
 #endif
 END
 
@@ -72,11 +77,11 @@ END
 #if defined(GTA_FIVE)
 #define PRODUCT "FiveZ"
 #elif defined(IS_RDR3)
-#define PRODUCT "RedZ"
+#define PRODUCT "RedX"
 #elif defined(GTA_NY)
-#define PRODUCT "LibertyZ"
+#define PRODUCT "LibertyC"
 #else
-#define PRODUCT "CitizenFX"
+#define PRODUCT "SitizenFX"
 #endif
 
 #define STR_HELPER(x) #x
@@ -99,12 +104,12 @@ BEGIN
     BEGIN
         BLOCK "040904b0"
         BEGIN
-            VALUE "CompanyName", "SitizenFX / VidllQ Authority"
-            VALUE "FileDescription", PRODUCT SUFFIX
+            VALUE "CompanyName", "Sfx.re"
+			VALUE "FileDescription", PRODUCT SUFFIX
             VALUE "InternalName", PRODUCT
             VALUE "FileVersion", "2.0.0." STR(EXE_VERSION)
-            VALUE "LegalCopyright", "(C) 2025 Elijah Siita / SitizenFX"
-            VALUE "OriginalFilename", "FiveZ.exe"
+            VALUE "LegalCopyright", "(C) 2015-2022 Cfx.re"
+            VALUE "OriginalFilename", "SitizenMP.exe"
             VALUE "ProductName", PRODUCT
             VALUE "ProductVersion", "2.0.0." STR(EXE_VERSION)
         END
