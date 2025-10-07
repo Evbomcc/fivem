@@ -47,7 +47,7 @@ BEGIN
             VALUE "CompanyName", "Sfx.re"
 			VALUE "FileDescription", "Cfx.re Platform Server (FXServer)"
             VALUE "FileVersion", "1.0.0.0"
-            VALUE "InternalName", "Citizen"
+            VALUE "InternalName", "Sitizen"
             VALUE "LegalCopyright", "(C) 2017-2020 Cfx.re"
             VALUE "OriginalFilename", "FXServer.exe"
             VALUE "ProductName", "CitizenFX"
