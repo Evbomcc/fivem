@@ -1,35 +1,39 @@
 /*
  * This file is part of the CitizenFX project - http://citizen.re/
  *
- * Modified by Elijah Siita / SitizenFX (FiveZ Edition)
- * 
- * Original Copyright (C) 2015-2022 Cfx.re
+ * See LICENSE and MENTIONS in the root of the source tree for information
+ * regarding licensing.
  */
 
 #include "launcher.rc.h"
 #include <windows.h>
+
 #include <launcher_version.h>
 
 LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+
 
 /////////////////////////////////////////////////////////////////////////////
 //
 // Icon
 //
 
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
 #ifdef GTA_NY
 IDI_ICON1               ICON                    "citizeniv.ico"
 #elif defined(GTA_FIVE)
-IDI_ICON1               ICON                    "fivem.ico"   // your FiveZ logo
+IDI_ICON1               ICON                    "fivem.ico"
 #elif defined(IS_RDR3)
 IDI_ICON1               ICON                    "redm.ico"
 #endif
 
 #ifdef LAUNCHER_PERSONALITY_MAIN
 IDI_SNAIL				ICON					"snail.ico"
+
 #if defined(GTA_FIVE)
-IDI_SP					ICON					"fivez_sp.ico"
-IDI_SDK					ICON					"fivez_sdk.ico"
+IDI_SP					ICON					"fivem_sp.ico"
+IDI_SDK					ICON					"fivem_sdk.ico"
 #endif
 #endif
 
@@ -46,9 +50,9 @@ IDM_BACKDROP			MEOW "backdrop_rdr.png"
 STRINGTABLE
 BEGIN
 #if defined(GTA_FIVE)
-	IDS_FOLDER_NAME, L"FiveZ Application Data"
+	IDS_FOLDER_NAME, L"FiveM Application Data"
 #elif defined(IS_RDR3)
-	IDS_FOLDER_NAME, L"RedZ Application Data"
+	IDS_FOLDER_NAME, L"RedM Application Data"
 #else
 	IDS_FOLDER_NAME, L"Cfx.re Application Data"
 #endif
@@ -70,11 +74,11 @@ END
 #endif
 
 #if defined(GTA_FIVE)
-#define PRODUCT "FiveZ"
+#define PRODUCT "FiveM"
 #elif defined(IS_RDR3)
-#define PRODUCT "RedZ"
+#define PRODUCT "RedM"
 #elif defined(GTA_NY)
-#define PRODUCT "LibertyZ"
+#define PRODUCT "LibertyM"
 #else
 #define PRODUCT "CitizenFX"
 #endif
@@ -99,12 +103,12 @@ BEGIN
     BEGIN
         BLOCK "040904b0"
         BEGIN
-            VALUE "CompanyName", "SitizenFX / VidllQ Authority"
-            VALUE "FileDescription", PRODUCT SUFFIX
+            VALUE "CompanyName", "Cfx.re"
+			VALUE "FileDescription", PRODUCT SUFFIX
             VALUE "InternalName", PRODUCT
             VALUE "FileVersion", "2.0.0." STR(EXE_VERSION)
-            VALUE "LegalCopyright", "(C) 2025 Elijah Siita / SitizenFX"
-            VALUE "OriginalFilename", "FiveZ.exe"
+            VALUE "LegalCopyright", "(C) 2015-2022 Cfx.re"
+            VALUE "OriginalFilename", "CitizenMP.exe"
             VALUE "ProductName", PRODUCT
             VALUE "ProductVersion", "2.0.0." STR(EXE_VERSION)
         END
@@ -113,4 +117,4 @@ BEGIN
     BEGIN
         VALUE "Translation", 0x409, 1200
     END
-END
+END 
