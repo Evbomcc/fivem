@@ -45,7 +45,7 @@ BEGIN
         BLOCK "040904b0"
         BEGIN
             VALUE "CompanyName", "Sfx.re"
-			VALUE "FileDescription", "Cfx.re Platform Server (CXServer)"
+			VALUE "FileDescription", "Sfx.re Platform Server (CXServer)"
             VALUE "FileVersion", "1.0.0.0"
             VALUE "InternalName", "Sitizen"
             VALUE "LegalCopyright", "(C) 2017-2020 Sfx.re"
