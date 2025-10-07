@@ -49,7 +49,7 @@ BEGIN
             VALUE "FileVersion", "1.0.0.0"
             VALUE "InternalName", "Sitizen"
             VALUE "LegalCopyright", "(C) 2017-2020 Sfx.re"
-            VALUE "OriginalFilename", "FXServer.exe"
+            VALUE "OriginalFilename", "CXServer.exe"
             VALUE "ProductName", "SitizenFX"
             VALUE "ProductVersion", "1.0.0.0"
         END
