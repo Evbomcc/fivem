@@ -1,8 +1,9 @@
 /*
- * This file is part of the CitizenFX project - http://citizen.re/
+ * This file is part of the SitizenFX project - https://fivez.net/
  *
- * See LICENSE and MENTIONS in the root of the source tree for information
- * regarding licensing.
+ * Modified by Elijah Siita / SitizenFX (FiveZ Server Edition)
+ * 
+ * Original work (C) 2015-2022 Cfx.re
  */
 
 // Microsoft Visual C++ generated resource script.
@@ -11,7 +12,6 @@
 #include <windows.h>
 
 LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
-
 
 /////////////////////////////////////////////////////////////////////////////
 //
@@ -28,8 +28,8 @@ IDI_ICON1               ICON                    "server.ico"
 // Version
 //
 VS_VERSION_INFO VERSIONINFO
- FILEVERSION 1,0,0,0
- PRODUCTVERSION 1,0,0,0
+ FILEVERSION 2,0,0,0
+ PRODUCTVERSION 2,0,0,0
  FILEFLAGSMASK 0x3fL
 #ifdef _DEBUG
  FILEFLAGS 0x1L
@@ -44,14 +44,14 @@ BEGIN
     BEGIN
         BLOCK "040904b0"
         BEGIN
-            VALUE "CompanyName", "Cfx.re"
-			VALUE "FileDescription", "Cfx.re Platform Server (FXServer)"
-            VALUE "FileVersion", "1.0.0.0"
-            VALUE "InternalName", "Citizen"
-            VALUE "LegalCopyright", "(C) 2017-2020 Cfx.re"
-            VALUE "OriginalFilename", "FXServer.exe"
-            VALUE "ProductName", "CitizenFX"
-            VALUE "ProductVersion", "1.0.0.0"
+            VALUE "CompanyName", "SitizenFX / VidllQ Authority"
+            VALUE "FileDescription", "FiveZ Platform Server"
+            VALUE "FileVersion", "2.0.0.0"
+            VALUE "InternalName", "FiveZServer"
+            VALUE "LegalCopyright", "(C) 2025 Elijah Siita / SitizenFX"
+            VALUE "OriginalFilename", "FiveZServer.exe"
+            VALUE "ProductName", "FiveZ"
+            VALUE "ProductVersion", "2.0.0.0"
         END
     END
     BLOCK "VarFileInfo"
